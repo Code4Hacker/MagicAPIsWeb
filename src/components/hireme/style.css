@@ -1,0 +1,189 @@
+.shortcut {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    width: 500px;
+    display: none;
+    transform: translate(-50%, -60%);
+    background-color: rgb(255, 228, 176);
+    padding: 10px;
+    height: 390px;
+    border-radius: 10px;
+    z-index: 7;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.144);
+    padding: 10px;
+    text-align: start;
+}
+
+.shortcut p {
+    color: var(--shy) !important;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.shortcut .image {
+    justify-self: center;
+    margin: 10px;
+    margin-left: calc(100% - 62%);
+    margin-top: -50px;
+    position: relative;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.185), inset 0px 0px 15px 2px rgba(0, 0, 0, 0.158);
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 228, 176);
+    height: 100px;
+    background-color: rgb(255, 228, 176);
+}
+
+.image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.relative {
+    position: relative;
+    overflow-y: scroll;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.details .image {
+    margin: 2px;
+    width: 50px;
+    background-color: var(--color);
+    height: 50px;
+}
+
+.det {
+    display: flex;
+}
+
+.det h6 {
+    width: 100%;
+    font-weight: 100;
+    font-size: small;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.det h6:nth-child(1) {
+    text-align: start;
+}
+
+.det h6:nth-child(2) {
+    text-align: end;
+}
+
+.box_flex {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.level {
+    width: 95%;
+    padding: 10px;
+}
+
+.level_bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color:
+        var(--color);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.level_tab {
+    position: relative;
+    width: var(--width);
+    height: 100%;
+    border-radius: 50px;
+    animation: left_to_right 2s ease;
+    background-color:
+        var(--dark);
+}
+
+@-webkit-keyframes left_to_right {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 20%;
+    }
+
+    100% {
+        width: var(--width);
+    }
+}
+
+@keyframes left_to_right {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 20%;
+    }
+
+    100% {
+        width: var(--width);
+    }
+}
+
+@-moz-keyframes left_to_right {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 20%;
+    }
+
+    100% {
+        width: var(--width);
+    }
+}
+
+.btn {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.btn button:nth-child(2){
+    background-color: var(--background);
+    color: var(--dark);
+}
+.btn button {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.089);
+    margin: 10px;
+    font-size: small;
+    font-family: 'pacifico', cursive;
+    padding: 10px;
+    min-width: 100px;
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--dark);
+    color: var(--color);
+}
+
+.btn button:hover {
+    margin: 10px;
+    padding: 10px;
+    min-width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--shy);
+    color: var(--color);
+}

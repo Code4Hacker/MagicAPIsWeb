@@ -1,0 +1,110 @@
+.navigator{
+    position: fixed;
+    width: 500px;
+    top: 0%;
+    left: 50%;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    z-index: 5;
+    overflow: hidden;
+    backdrop-filter: blur(40px);
+    transform: translateX(-50%);
+}
+.navigator h3 .logo_board{
+    font-size: 17px;
+    margin: 10px;
+    text-decoration-line: none;
+    margin-left: 0px;
+    color: var(
+        --dark
+    );
+}
+.scroll.navigator h3 .logo_board{
+    font-size: 17px;
+    margin: 10px;
+    text-decoration-line: none;
+    margin-left: 0px;
+    color: var(
+        --background
+    );
+}
+
+.navigator h3 span:nth-child(1){
+    font-family: var(
+        --header-fonts
+    );
+}
+.navigator h3 span:nth-child(2){
+    font-family: var(
+        --decoration
+    );
+}
+.navigator .col-9{
+    border-top-left-radius: 10px;
+}
+.navigator ul{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-size: small;
+}
+.navigator ul li{
+    list-style: none;
+    margin: 10px;
+}
+.navigator ul li a{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--dark);
+    text-decoration: none;
+}
+.scroll.navigator{
+    background-color: var(
+        --dark
+    );
+    color: var(
+        --color
+    );
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.363);
+}
+.scroll.navigator .col-9{
+    background-color: var(
+        --color
+    );
+}
+.scroll.navigator h3{
+    color: var(
+        --color
+    );
+}
+@media screen and (max-width:550px) {
+    .navigator{
+        position: fixed;
+        width: 80% !important;
+        top: 0%;
+        left: 50%;
+        padding-top: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        transition: .5s ease-in-out;
+        z-index: 5;
+        overflow: hidden;
+        backdrop-filter: blur(40px);
+        transform: translateX(-50%);
+    }
+    .navigator .row{
+        flex-direction: row;
+    }
+    .navigator .row .col-9 {
+        width: 70%;
+        margin-left: calc(100% - 90%);
+        position: relative;
+    }
+    .navigator ul{
+        display: none;
+    }
+    
+}
