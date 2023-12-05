@@ -19,7 +19,7 @@ const useFetch = (title) => {
     
         try {
             const response = await axios.request(options);
-            console.log(response.data);
+            // console.log(response.data);
             const ten  = response.data;
             setMovies(ten.splice(0,5));
         // omDB(movies);
