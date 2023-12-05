@@ -12,7 +12,7 @@ const useFetch = (title) => {
                 homeCountry: 'US'
             },
             headers: {
-                'X-RapidAPI-Key': fee9d2f76cmsha6654ed67aca14cp159bdbjsn23d750d5c041, //process.env.REACT_APP_IMDB
+                'X-RapidAPI-Key': 'fee9d2f76cmsha6654ed67aca14cp159bdbjsn23d750d5c041', //process.env.REACT_APP_IMDB
                 'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
             }
         };
