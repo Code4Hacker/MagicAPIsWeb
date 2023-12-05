@@ -12,14 +12,14 @@ const useFetch = (title) => {
                 homeCountry: 'US'
             },
             headers: {
-                'X-RapidAPI-Key': process.env.REACT_APP_IMDB,
+                'X-RapidAPI-Key': fee9d2f76cmsha6654ed67aca14cp159bdbjsn23d750d5c041, //process.env.REACT_APP_IMDB
                 'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
             }
         };
     
         try {
             const response = await axios.request(options);
-            // console.log(response.data);
+            console.log(response.data);
             const ten  = response.data;
             setMovies(ten.splice(0,5));
         // omDB(movies);
