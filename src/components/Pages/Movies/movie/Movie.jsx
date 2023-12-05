@@ -59,7 +59,7 @@ const Movies = () => {
     }
     useEffect(() => {
         const fetching = async () => {
-            const response = await fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB}&i=${id}`);
+            const response = await fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB}&i=${id}`);
             const datares = await response.json();
             setOmdbDT(datares);
             fetched(datares);
