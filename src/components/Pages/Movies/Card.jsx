@@ -37,11 +37,10 @@ const Card = ({ movie }) => {
             const response = await fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB}&i=${movie.id.split('/')[2]}`);
             const datares = await response.json();
             setRes(datares);
-            console.log("MOVIE FROM CARD: ", datares);
+            // console.log("MOVIE FROM CARD: ", datares);
         }
         fetching();
         // eslint-disable-next-line
-            console.log("MOVIE FROM DASH: ",movie);
     }, [res]);
     Aos.init({
         duration: 1000
