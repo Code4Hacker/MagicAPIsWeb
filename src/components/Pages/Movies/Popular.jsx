@@ -7,7 +7,7 @@ const Populars = ({ movie }) => {
     const [res, setRes] = useState([]);
     useEffect(() => {
         const fetching = async () => {
-            const response = await fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB}&i=${movie.split('/')[2]}`);
+            const response = await fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB}&i=${movie.split('/')[2]}`);
             const datares = await response.json();
             setRes(datares);
         }
