@@ -34,7 +34,7 @@ const Movies = () => {
             </div>
             <div className="container mrg-100">
                 
-            <video src="https://imdb-video.media-imdb.com/vi1015463705/1434659454657-dx9ykf-1606954080073.mp4?Expires=1685094545&Signature=NLFE9C4mjcur3mSEzGaE9P4FSUoE3QyY8FEFGNj1KQvCnt4rftjcsK8CKtwxpomUt5Uqc2wAynK7e8PMtEYFPIHapkCvL1sSz8W4uq~BNUvfeNF5RL5BUDozG0sbCrULUERh5RXMEOAEh6cah3ej-ryACcVArgvfFScjCC8XvUV6CwD~heXvPoTxtXEdXQo03dXgSZPw6SFY~JK~QQT8omKoJt8JVBk1sdqammZmp9iSoxb~E88clUzXFdXaI7x84kqq7I9c67izS4D63qhmwxZvy8bgvmHrklNKswNvcD~q8yP1gHDuclBauqF~Yq27LPZX1fRNk7zxceZU7qTNQg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA" controls></video>
+{/*             <video src="https://imdb-video.media-imdb.com/vi1015463705/1434659454657-dx9ykf-1606954080073.mp4?Expires=1685094545&Signature=NLFE9C4mjcur3mSEzGaE9P4FSUoE3QyY8FEFGNj1KQvCnt4rftjcsK8CKtwxpomUt5Uqc2wAynK7e8PMtEYFPIHapkCvL1sSz8W4uq~BNUvfeNF5RL5BUDozG0sbCrULUERh5RXMEOAEh6cah3ej-ryACcVArgvfFScjCC8XvUV6CwD~heXvPoTxtXEdXQo03dXgSZPw6SFY~JK~QQT8omKoJt8JVBk1sdqammZmp9iSoxb~E88clUzXFdXaI7x84kqq7I9c67izS4D63qhmwxZvy8bgvmHrklNKswNvcD~q8yP1gHDuclBauqF~Yq27LPZX1fRNk7zxceZU7qTNQg__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA" controls></video> */}
                 <div className="row mrg-100">
                     {
                         popular.movies !== undefined && popular.movies?.length > 0 ? popular.movies.map((movie, i) => <Populars movie={movie} key={i} />) : <Loader/>
