@@ -92,7 +92,7 @@ const Movies = () => {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="poster mrg-100">
-                                    <img src={quality !== undefined ? quality.image.uri : "https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-1932.jpg?w=740&t=st=1684945155~exp=1684945755~hmac=aaf36e517e2114c817afa6c0f46ed6a5ee7346c336922b372e9b2bbb3e9bc373"} alt="" />
+                                    <img src={omdbDT !== undefined ? omdbDT.Poster : "https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-1932.jpg?w=740&t=st=1684945155~exp=1684945755~hmac=aaf36e517e2114c817afa6c0f46ed6a5ee7346c336922b372e9b2bbb3e9bc373"} alt="" />
                                 </div>
                             </div>
                             <div className="col-md-7 mrg-neg-150 text_left">
